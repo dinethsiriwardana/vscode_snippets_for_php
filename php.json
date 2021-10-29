@@ -1,0 +1,111 @@
+{
+	"php": {
+		"prefix": "php",
+		"body": [
+			"<?php",
+			"?>"
+		],
+		"description": "php tag"
+	},
+	"comm": {
+		"prefix": "lcom",
+		"body": [
+			"<!-- ///////////////////////// $1 ///////////////////////// -->"
+		],
+		"description": "PHP Com"
+	},
+	"dbcon": {
+		"prefix": "dbcon",
+		"body": [
+			"\\$servername = \"localhost\";",
+			"\\$username = \"root\";",
+			"\\$password = \"\";",
+			"\\$dbname = \"myDB\";",
+			"",
+			"\\$conn = new mysqli(\\$servername, \\$username, \\$password, \\$dbname);"
+		],
+		"description": "PHP DB Connection"
+	},
+	"dbinsert": {
+		"prefix": "dbinsert",
+		"body": [
+			"\\$name = \"name\" ;",
+			"",
+			"\\$sql = \"INSERT INTO MyGuests (firstname, lastname, email)",
+			"VALUES ('\\$aa', 'Doe', 'john@example.com')\";",
+			"if (\\$conn->query(\\$sql) === TRUE) {",
+			"",
+			"} else {",
+			"echo \"Error: \" . \\$sql . \"<br>\" . \\$conn->error;",
+			"}",
+		],
+		"description": "PHP DB data Insert"
+	},
+	"dbsearch": {
+		"prefix": "dbsearch",
+		"body": [
+			"",
+			"\\$select = \"select\" ;",
+			"\\$table = \"tablename\" ;",
+			"",
+			"\\$sql = \"SELECT \\$select FROM \\$table \";",
+			"",
+			"\\$result = \\$conn->query(\\$sql);",
+			"",
+			"",
+			"if (\\$result->num_rows > 0) {",
+			"",
+			"while(\\$row = \\$result->fetch_assoc()) {",
+			"",
+			"echo \" id: \" . \\$row[\"id\"];",
+			"",
+			"}",
+			"}",
+		],
+		"description": "PHP data  read"
+	},
+	"dbdelete": {
+		"prefix": "dbdel",
+		"body": [
+			"",
+			"\\$con = \"condition\" ;",
+			"\\$table = \"tablename\" ;",
+			"",
+			"\\$sql = \"DELETE FROM \\$table WHERE \\$con \";",
+			"",
+			"if (\\$conn->query(\\$sql) === TRUE) {",
+			"",
+			"} else {",
+			"echo \"Error: \" . \\$sql . \"<br>\" . \\$conn->error;",
+			"}",
+		],
+		"description": "PHP DB data Insert"
+	},
+	"dbupdate": {
+		"prefix": "dbupdate",
+		"body": [
+			"",
+			"\\$what_c = \"what\" ;",
+			"\\$where_c = \"where\" ;",
+			"\\$table = \"tablename\" ;",
+			"",
+			"\\$sql = \"UPDATE \\$table SET  \\$what_c WHERE \\$where_c \";",
+			"",
+			"if (\\$conn->query(\\$sql) === TRUE) {",
+			"",
+			"} else {",
+			"echo \"Error: \" . \\$sql . \"<br>\" . \\$conn->error;",
+			"}",
+		],
+		"description": "PHP DB data Insert"
+	},
+	"cookie": {
+		"prefix": "cookie",
+		"body": [
+			"",
+			"setcookie('username', \\$c_uname, 0 , \"/\");",
+			"//setcookie('username', \\$c_uname,  time() + (86400 * 30 * 6) , \"/\");",
+		],
+		"description": "PHP DB data Insert"
+	}
+}
