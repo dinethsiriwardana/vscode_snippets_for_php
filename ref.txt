@@ -1,11 +1,32 @@
 dbcon - Connect to MySQL
 
+    $servername = "localhost";
+    $username = "username";
+    $password = "password";
+    $dbname = "myDB";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
 dbinsert - MySQL Insert Data
 
+  INSERT INTO table_name (column1, column2, column3,...)
+  VALUES (value1, value2, value3,...) 
+  
 dbsearch - MySQL Select Data
+
+  SELECT column_name(s) FROM table_name 
 
 dbdel - MySQL Delete Data
 
+  The DELETE statement is used to delete records from a table:
+  DELETE FROM table_name
+  WHERE some_column = some_value 
+
 dbupdate - Update Data In a MySQL Table
+
+  UPDATE table_name
+  SET column1=value, column2=value2,...
+  WHERE some_column=some_value  
 
 cookie - Create Cookies With PHP
