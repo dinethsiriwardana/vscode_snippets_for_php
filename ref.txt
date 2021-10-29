@@ -1,0 +1,11 @@
+dbcon - Connect to MySQL
+
+dbinsert - MySQL Insert Data
+
+dbsearch - MySQL Select Data
+
+dbdel - MySQL Delete Data
+
+dbupdate - Update Data In a MySQL Table
+
+cookie - Create Cookies With PHP
