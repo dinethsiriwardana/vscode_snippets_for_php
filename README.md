@@ -9,5 +9,6 @@ VS Code Snippets for php Database Connection , Data Insert / Select / Update / D
   
   <p><i> Copy the file to C:\Users\<username>\AppData\Roaming\Code\User\snippets\ </i></p>
   
+  Reference - Check ref.txt for Snippets list
   
   The End
